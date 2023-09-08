@@ -4,6 +4,10 @@ import Calculator from './ModernCalculator/Calculator';
 import ExchangeRate from './ModernCalculator/Exchange';
 import Converter from './ModernCalculator/Conver';
 import BasicCalculator from './ModernCalculator/Calculator';
+import FirstTest from './First';
+import Second from './Second';
+import Login from './Login';
+
 
 
 
@@ -21,15 +25,18 @@ function App () {
    
   
   return(
-    <div className='App'>
-      <div className='main-container'>
+    <div className='AppA'>
+      {/* <div className='main-container'>
       <button id="cal"   onClick={() => setTab("cal")}>Calculator</button >
       <button id="ex" onClick={() => setTab("exrt")}>Exchange Rate</button>
       <button onClick={() =>setTab("con")}>Unit Converter</button>
 
       </div>
       
-     {tab === 'cal'  ? <Calculator /> : tab ==='exrt' ? <ExchangeRate/> : tab === 'con' ? <Converter /> : null}
+     {tab === 'cal'  ? <Calculator /> : tab ==='exrt' ? <ExchangeRate/> : tab === 'con' ? <Converter /> : null} */}
+ <FirstTest/>
+ <Second/>
+ <Login/>
     </div>
   )
 }
