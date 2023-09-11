@@ -1,7 +1,10 @@
 import App from './App';
+import{render,screen,fireEvent} from '@testing-library/react'
 import FirstTest from './First';
 import Second from './Second';
 import Login from './Login';
+import '@testing-library/jest-dom'
+
 import TestWithMockData from './MockData';
  const mockData = [
         {
@@ -107,5 +110,5 @@ test("button element not to be disabled",()=>{
 })
 test("Mock Data successfully", () => {
   render(<TestWithMockData data={mockData} />)
-  expect(screen.getByText(/charrild1@.ne.jp/i)).toBeInTheDocument();
+  expect(screen.getByText(/Fletcher/i)).toBeInTheDocument();
 })
